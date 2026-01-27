@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CinemachineTarget
   - Bullet
+  - Coin
   layers:
   - Default
   - TransparentFX

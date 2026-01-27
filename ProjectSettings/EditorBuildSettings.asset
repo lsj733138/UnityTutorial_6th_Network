@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Photon/01. Scenes/Fight Intro.unity
+    path: Assets/Photon/01. Scenes/Fight/Fight Intro.unity
     guid: abec9fb67d5d88543ad8be2cd9d4fc82
   - enabled: 1
-    path: Assets/Photon/01. Scenes/Fight Main.unity
+    path: Assets/Photon/01. Scenes/Fight/Fight Main.unity
     guid: 5e5cb393341b5524ea0bc93ae802f8d1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

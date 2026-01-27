@@ -57,4 +57,10 @@ public class FightController : MonoBehaviour
         
         controller.enabled = true;
     }
+
+    public void SetDeath()
+    {
+        controller.enabled = false;
+        this.enabled = false;
+    }
 }

@@ -41,6 +41,12 @@ MonoBehaviour:
   - RespawnSpaceship
   - SetHat
   - SetHatRPC
+  - OnGetDamage
+  - MoveCoin
+  - AddTail
+  - MoveTail
+  - SetCoinPosition
+  - Death
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
