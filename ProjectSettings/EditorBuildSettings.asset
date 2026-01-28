@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Photon/01. Scenes/Fight/Fight Main.unity
     guid: 5e5cb393341b5524ea0bc93ae802f8d1
+  - enabled: 1
+    path: Assets/Netcode For GameObject/01. Scenes/NGO/Simple.unity
+    guid: 221ac3a318e44574ba10c69982869cd9
+  - enabled: 1
+    path: Assets/Netcode For GameObject/01. Scenes/NGO/Digging.unity
+    guid: fa7ea3d89b894484e8bc9c52118feedb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
