@@ -1,20 +1,30 @@
 using TMPro;
+using Unity.Netcode;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour
+public class ScoreManager : NetworkBehaviour
 {
     public TextMeshProUGUI scoreText;
 
-    private int score;
+    private NetworkVariable<int> score = new NetworkVariable<int>();
 
-    private void Start()
+    public override void OnNetworkSpawn()
     {
-        scoreText.text = $"현재 획득한 광물의 수 : {score}";
+        base.OnNetworkSpawn();
+        
+        scoreText.text = $"현재 획득한 광물의 수 : {score.Value}";
+        //score.OnValueChanged += (prevValue, newValue) => scoreText.text = $"현재 획득한 광물의 수 : {newValue}";
+        score.OnValueChanged += SetScore;
     }
 
     public void AddScore()
     {
-        score++;
-        scoreText.text = $"현재 획득한 광물의 수 : {score}";
+        score.Value++;
     }
+    
+    private void SetScore(int prevValue, int newValue)
+    {
+        scoreText.text = $"현재 획득한 광물의 수 : {newValue}";
+    }
+    
 }

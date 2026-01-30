@@ -19,7 +19,6 @@ public class ConnectManager : MonoBehaviour
         NetworkManager.Singleton.OnServerStarted += ServerStarted;
         NetworkManager.Singleton.OnServerStopped += ServerStopped;
         NetworkManager.Singleton.OnClientStarted += ClientStarted;
-        
     }
 
     private void ServerStarted()
